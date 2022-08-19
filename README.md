@@ -1,9 +1,10 @@
 # This is assignment for 2X
 
-NOTE: This Laravel Framework using version 9.25.1
+This is a simple point-of-concept (PoC) for the assessment.
 
 ## Requirements
 
+This project is using Laravel Framework version 9.25.1
 - PHP 8.1
 - MySQL
 - Any webserver (Apache OR Nginx)
@@ -45,9 +46,15 @@ NOTE: This Laravel Framework using version 9.25.1
 
    3.2 ```php artisan wg:new-user```: This command will create new user
 
-   3.3 ```php artisan wg:new-task```: This command will create new task and required to select user to assign for
+   3.3 ```php artisan wg:new-task```: This command will create new task and required to select user to assign task for
+
+   3.4 ```php artisan wg:weekly-update```: This command is to simulate at the end of the week, once the total hours amount to 40 or above, weekly timesheet will automatically send email to client for approval
 
 4. Finally, run ```php artisan serve``` to run locally
+   
     NOTE: Can go to ```/auth/login``` to start, default email and password already key-in
 
-NOTE: If you have any trouble or questions, feel free to reach me!
+NOTE: 
+- If you have any trouble or questions, feel free to reach me!
+- For point 3.4 above, I wish to use Laravel Queue to notify talents to confirm the weekly timesheet but I didn't manage to do it due to time constraint
+- It may doesn't follow exactly the assessment requirements due to time constraint but I hope it sufficient
